@@ -1,0 +1,41 @@
+*{
+	margin:0;
+	padding:0;
+}
+$color1:#333;
+$color2:#666;
+$color3:#999;
+$btncolor:#a00202;
+@mixin btn{
+	width:80px;
+	height:30px;
+	font-size:16px;
+	line-height:30px;
+	text-align:center;
+	color:#fff;
+	border:none;
+	background:$btncolor;
+	border-radius:5px;
+	outline:none;
+	cursor: pointer;
+}
+body{
+	background:$color1;
+	font-size:14px;
+}
+.reg-ctn{
+	width:500px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.reg-ctn div{
+	height:30px;
+	line-height:30px;
+}
+.reg-ctn  label{
+	display:inline-block;
+	width:80px;
+}
+.reg-ctn button{
+	@include btn;
+}
